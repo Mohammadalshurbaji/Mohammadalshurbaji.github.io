@@ -9,7 +9,7 @@
 
     <!-- Favicons -->
     <link href="assets/img/favicon.jpg" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="assets/img/favicon.jpg" rel="apple-touch-icon" />
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -48,6 +48,10 @@
   </head>
 
   <body class="index-page">
+    <!-- Under Construction Banner -->
+    <div class="construction-banner text-center p-2">
+      🚧 This website is still under construction. Stay tuned! 🚧
+    </div>
     <header
       id="header"
       class="header d-flex flex-column justify-content-center"
@@ -419,9 +423,9 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="resume-title" style="text-align: justify">Summary</h3>
+              <h3 class="resume-title">Summary</h3>
 
-              <div class="resume-item pb-0">
+              <div class="resume-item pb-0" style="text-align: justify">
                 <h4>Mohammad Alshurbaji</h4>
                 <p>
                   <em
@@ -594,8 +598,10 @@
               <!-- Edn Resume Item -->
 
               <!-- Extracurricular Activities Section -->
-              <div class="resume-item" style="text-align: justify">
-                <h3 class="resume-title">Extracurricular Activities</h3>
+              <div class="resume-item">
+                <h3 class="resume-title" style="text-align: justify">
+                  Extracurricular Activities
+                </h3>
 
                 <h4>IEEE Clemson University Student Chapter, Team Member</h4>
                 <h5>Aug. 2024 - Present</h5>
@@ -636,7 +642,535 @@
       </section>
       <!-- /Resume Section -->
       <!-- 
-      
+      </section><!-- /Certificates Section -->
+
+      <!-- Portfolio Section -->
+      <section id="work" class="portfolio section bg-light py-5">
+        <!-- Section Title -->
+        <div
+          class="container section-title text-center mb-5"
+          data-aos="fade-up"
+        >
+          <h2 class="display-4 text-dark">Projects & Certificates</h2>
+          <p class="lead text-muted">
+            Discover a curated collection of my standout projects, complemented
+            by courses and certifications that have enhanced my expertise and
+            expanded my skill set.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <!-- Portfolio Filters -->
+            <ul
+              class="portfolio-filters isotope-filters list-unstyled text-center mb-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <li data-filter="*" class="filter-active btn btn-primary m-2">
+                All
+              </li>
+              <li
+                data-filter=".filter-projects"
+                class="btn btn-outline-primary m-2"
+              >
+                Projects
+              </li>
+              <li
+                data-filter=".filter-tech"
+                class="btn btn-outline-primary m-2"
+              >
+                Tech Certs
+              </li>
+              <li
+                data-filter=".filter-soft"
+                class="btn btn-outline-primary m-2"
+              >
+                Soft Certs
+              </li>
+              <li
+                data-filter=".filter-Endorsements"
+                class="btn btn-outline-primary m-2"
+              >
+                Endorsements
+              </li>
+            </ul>
+            <!-- End Portfolio Filters -->
+
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <script>
+                function openFullscreen() {
+                  var iframe = document.querySelector("iframe");
+                  if (iframe.requestFullscreen) {
+                    iframe.requestFullscreen();
+                  } else if (iframe.mozRequestFullScreen) {
+                    // Firefox
+                    iframe.mozRequestFullScreen();
+                  } else if (iframe.webkitRequestFullscreen) {
+                    // Chrome, Safari, and Opera
+                    iframe.webkitRequestFullscreen();
+                  } else if (iframe.msRequestFullscreen) {
+                    // IE/Edge
+                    iframe.msRequestFullscreen();
+                  }
+                }
+              </script>
+
+              <!-- Cert 1 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tech"
+              >
+                <div class="card shadow-sm">
+                  <div class="thumbnail-container">
+                    <img
+                      src="assets/img/Projects/cea.jpeg"
+                      class="card-img-top img-fluid"
+                      alt="Recommendation Letter"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">CEA Certificate</h4>
+                    <p class="card-text">AEE</p>
+                    <a
+                      href="assets/img/Projects/cea.jpeg"
+                      title="Tech Certificate - CEA"
+                      data-gallery="portfolio-gallery-recommendations"
+                      class="glightbox btn btn-outline-secondary"
+                      ><i class="bi bi-zoom-in"></i> View</a
+                    >
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- End Cert 1 -->
+
+              <!-- Cert 2 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tech"
+              >
+                <div class="card shadow-sm">
+                  <div class="thumbnail-container">
+                    <img
+                      src="assets/img/Projects/CEAt.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Recommendation Letter"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">CEA Training Certificate</h4>
+                    <p class="card-text">AEE</p>
+                    <a
+                      href="assets/img/Projects/CEAt.jpg"
+                      title="Tech Certificate - CEA Training"
+                      data-gallery="portfolio-gallery-recommendations"
+                      class="glightbox btn btn-outline-secondary"
+                      ><i class="bi bi-zoom-in"></i> View</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- End Cert 2 -->
+
+              <!-- Cert 3 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tech"
+              >
+                <div class="card shadow-sm">
+                  <div class="thumbnail-container">
+                    <img
+                      src="assets/img/Projects/Ignition.png"
+                      class="card-img-top img-fluid"
+                      alt="Recommendation Letter"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Ignition 8.1 Credential</h4>
+                    <p class="card-text">Inductive University</p>
+                    <a
+                      href="assets/img/Projects/Ignition.png"
+                      title="Tech Certificate - Ignition"
+                      data-gallery="portfolio-gallery-recommendations"
+                      class="glightbox btn btn-outline-secondary"
+                      ><i class="bi bi-zoom-in"></i> View</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cert 3 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-soft"
+              >
+                <div class="card shadow-sm">
+                  <div class="thumbnail-container">
+                    <img
+                      src="assets/img/Projects/leader.jpeg"
+                      class="card-img-top img-fluid"
+                      alt="Recommendation Letter"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Certified Student Leader</h4>
+                    <p class="card-text">Clemson University</p>
+                    <a
+                      href="assets/img/Projects/leader.jpeg"
+                      title="Soft Certificate - Leadership"
+                      data-gallery="portfolio-gallery-recommendations"
+                      class="glightbox btn btn-outline-secondary"
+                      ><i class="bi bi-zoom-in"></i> View</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- End Cert 3 -->
+
+              <!-- Cert 4 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-soft"
+              >
+                <div class="card shadow-sm">
+                  <div class="thumbnail-container">
+                    <img
+                      src="assets/img/Projects/agile.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Recommendation Letter"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Agile Project Management</h4>
+                    <p class="card-text">Google</p>
+                    <a
+                      href="assets/img/Projects/agile.jpg"
+                      title="Soft Certificate - Agile"
+                      data-gallery="portfolio-gallery-recommendations"
+                      class="glightbox btn btn-outline-secondary"
+                      ><i class="bi bi-zoom-in"></i> View</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- End Cert 4 -->
+
+              <!-- Cert 5 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tech"
+              >
+                <div class="card shadow-sm">
+                  <div class="thumbnail-container">
+                    <img
+                      src="assets/img/Projects/nn.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Recommendation Letter"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Neural Networks and Deep Learning
+                    </h4>
+                    <p class="card-text">DeepLearning.AI</p>
+                    <a
+                      href="assets/img/Projects/nn.jpg"
+                      title="Tech Certificate - NN"
+                      data-gallery="portfolio-gallery-recommendations"
+                      class="glightbox btn btn-outline-secondary"
+                      ><i class="bi bi-zoom-in"></i> View</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- End Cert 5 -->
+
+              <!-- Cert 6 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tech"
+              >
+                <div class="card shadow-sm">
+                  <div class="thumbnail-container">
+                    <img
+                      src="assets/img/Projects/powerbi.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Recommendation Letter"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Harnessing the Power of Data with Power BI
+                    </h4>
+                    <p class="card-text">Microsoft</p>
+                    <a
+                      href="assets/img/Projects/powerbi.jpg"
+                      title="Tech Certificate - Power BI"
+                      data-gallery="portfolio-gallery-recommendations"
+                      class="glightbox btn btn-outline-secondary"
+                      ><i class="bi bi-zoom-in"></i> View</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- End Cert 6 -->
+
+              <!-- Cert 7 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tech"
+              >
+                <div class="card shadow-sm">
+                  <div class="thumbnail-container">
+                    <img
+                      src="assets/img/Projects/bpython.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Recommendation Letter"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Python Basics</h4>
+                    <p class="card-text">University of Michigan</p>
+                    <a
+                      href="assets/img/Projects/bpython.jpg"
+                      title="Tech Certificate - Py Basics"
+                      data-gallery="portfolio-gallery-recommendations"
+                      class="glightbox btn btn-outline-secondary"
+                      ><i class="bi bi-zoom-in"></i> View</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- End Cert 7 -->
+
+              <!-- Cert 8 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tech"
+              >
+                <div class="card shadow-sm">
+                  <div class="thumbnail-container">
+                    <img
+                      src="assets/img/Projects/programming.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Recommendation Letter"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Programming for Everybody</h4>
+                    <p class="card-text">University of Michigan</p>
+                    <a
+                      href="assets/img/Projects/prgoramming.jpg"
+                      title="Tech Certificate - Py Basics"
+                      data-gallery="portfolio-gallery-recommendations"
+                      class="glightbox btn btn-outline-secondary"
+                      ><i class="bi bi-zoom-in"></i> View</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- End Cert 8 -->
+
+              <!-- Cert 8 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tech"
+              >
+                <div class="card shadow-sm">
+                  <div class="thumbnail-container">
+                    <img
+                      src="assets/img/Projects/python.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Recommendation Letter"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Python Data Structures</h4>
+                    <p class="card-text">University of Michigan</p>
+                    <a
+                      href="assets/img/Projects/python.jpg"
+                      title="Tech Certificate - Py Data Structures"
+                      data-gallery="portfolio-gallery-recommendations"
+                      class="glightbox btn btn-outline-secondary"
+                      ><i class="bi bi-zoom-in"></i> View</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- End Cert 8 -->
+
+              <!-- Cert 7 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Endorsements"
+              >
+                <div class="card shadow-sm">
+                  <div class="thumbnail-container">
+                    <img
+                      src="assets/img/Projects/arison.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Recommendation Letter"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Endorsement - Arison</h4>
+                    <p class="card-text">Arison Company</p>
+                    <a
+                      href="assets/img/Projects/arison.jpg"
+                      title="Endorsement Letter - Arison"
+                      data-gallery="portfolio-gallery-recommendations"
+                      class="glightbox btn btn-outline-secondary"
+                      ><i class="bi bi-zoom-in"></i> View</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- End Cert 7 -->
+
+              <!-- Cert 7 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Endorsements"
+              >
+                <div class="card shadow-sm">
+                  <div class="thumbnail-container">
+                    <img
+                      src="assets/img/Projects/rasha.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Recommendation Letter"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Endorsement - University of Jordan
+                    </h4>
+                    <p class="card-text">University of Jordan</p>
+                    <a
+                      href="assets/img/Projects/rasha.jpg"
+                      title="Endorsement Letter - University of Jordan"
+                      data-gallery="portfolio-gallery-recommendations"
+                      class="glightbox btn btn-outline-secondary"
+                      ><i class="bi bi-zoom-in"></i> View</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- End Cert 7 -->
+
+              <!-- Cert 7 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Endorsements"
+              >
+                <div class="card shadow-sm">
+                  <div class="thumbnail-container">
+                    <img
+                      src="assets/img/Projects/jamil.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Recommendation Letter"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Endorsement - University of Jordan
+                    </h4>
+                    <p class="card-text">University of Jordan</p>
+                    <a
+                      href="assets/img/Projects/jamil.jpg"
+                      title="Endorsement Letter - University of Jordan"
+                      data-gallery="portfolio-gallery-recommendations"
+                      class="glightbox btn btn-outline-secondary"
+                      ><i class="bi bi-zoom-in"></i> View</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- End Cert 7 -->
+
+              <!-- Cert 8 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-Endorsements"
+              >
+                <div class="card shadow-sm">
+                  <div class="thumbnail-container">
+                    <img
+                      src="assets/img/Projects/iaeste.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Recommendation Letter"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Endorsement - IAESTE</h4>
+                    <p class="card-text">IAESTE</p>
+                    <a
+                      href="assets/img/Projects/iaeste.jpg"
+                      title="Endorsement Letter - IAESTE"
+                      data-gallery="portfolio-gallery-recommendations"
+                      class="glightbox btn btn-outline-secondary"
+                      ><i class="bi bi-zoom-in"></i> View</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- End Cert 8 -->
+
+              <!-- Cert 9 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tech"
+              >
+                <div class="card shadow-sm">
+                  <div class="thumbnail-container">
+                    <img
+                      src="assets/img/Projects/OrangeFabLab.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Recommendation Letter"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">CAD & 3D Printing</h4>
+                    <p class="card-text">Orange</p>
+                    <a
+                      href="assets/img/Projects/OrangeFabLab.jpg"
+                      title="Tech Certificate - CAD Printing"
+                      data-gallery="portfolio-gallery-recommendations"
+                      class="glightbox btn btn-outline-secondary"
+                      ><i class="bi bi-zoom-in"></i> View</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- Cert 10 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tech"
+              >
+                <div class="card shadow-sm">
+                  <div class="thumbnail-container">
+                    <img
+                      src="assets/img/Projects/cont.jpg"
+                      class="card-img-top img-fluid"
+                      alt="Recommendation Letter"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">ACPC Hackathon</h4>
+                    <p class="card-text">ACPC</p>
+                    <a
+                      href="assets/img/Projects/cont.jpg"
+                      title="Tech Certificate"
+                      data-gallery="portfolio-gallery-recommendations"
+                      class="glightbox btn btn-outline-secondary"
+                      ><i class="bi bi-zoom-in"></i> View</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- End Cert 9 -->
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+
       <!-- Contact Section -->
       <section id="contact" class="contact section">
         <!-- Section Title -->
