@@ -150,7 +150,7 @@
         filter: filter,
         sortBy: sort
       });
-      // Set the default filter to "Projects"
+      // Set the default filter to "tech certs"
       initIsotope.arrange({
         filter: '.filter-tech'
       });
