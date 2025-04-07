@@ -72,8 +72,7 @@
           </li>
           <li>
             <a href="#skills"
-              ><i class="bi bi-gear navicon"></i
-              ><span>Skills</span></a
+              ><i class="bi bi-gear navicon"></i><span>Skills</span></a
             >
           </li>
           <li>
@@ -82,6 +81,7 @@
               ><span>Resume</span></a
             >
           </li>
+
           <li>
             <a href="#work"
               ><i class="bi bi-folder2-open navicon"></i>
@@ -117,7 +117,6 @@
       <!-- Hero Section -->
       <section id="hero" class="hero section light-background">
         <img src="assets/img/hero-bg4.jpeg" alt="" />
-
         <div class="container" data-aos="zoom-out">
           <div class="row justify-content-center">
             <div class="col-lg-9">
@@ -678,20 +677,21 @@
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <li data-filter="*" class="filter-active btn btn-primary m-2">
+              <!-- <li data-filter="*" class="filter-active btn btn-primary m-2">
                 All
+              </li> -->
+
+              <li
+                data-filter=".filter-tech"
+                class="filter-active btn btn-outline-primary m-2"
+              >
+                Tech Certs
               </li>
               <li
                 data-filter=".filter-projects"
                 class="btn btn-outline-primary m-2"
               >
                 Projects
-              </li>
-              <li
-                data-filter=".filter-tech"
-                class="btn btn-outline-primary m-2"
-              >
-                Tech Certs
               </li>
               <li
                 data-filter=".filter-soft"
@@ -706,6 +706,33 @@
                 Endorsements
               </li>
             </ul>
+            <!-- Sub-tabs only for Projects -->
+            <!-- <div id="project-sub-tabs" class="text-center mb-4 d-none">
+              <button
+                class="btn btn-outline-secondary m-1 sub-tab active"
+                data-subtab="all"
+              >
+                All
+              </button>
+              <button
+                class="btn btn-outline-secondary m-1 sub-tab"
+                data-subtab="ml"
+              >
+                ML & AI
+              </button>
+              <button
+                class="btn btn-outline-secondary m-1 sub-tab"
+                data-subtab="web"
+              >
+                Web Development
+              </button>
+              <button
+                class="btn btn-outline-secondary m-1 sub-tab"
+                data-subtab="data"
+              >
+                Data Projects
+              </button>
+            </div> -->
             <!-- End Portfolio Filters -->
 
             <div
@@ -730,6 +757,522 @@
                   }
                 }
               </script>
+              <!-- Modal for viewing the project description-->
+              <div
+                class="modal fade"
+                id="projectModal"
+                tabindex="-1"
+                aria-labelledby="projectModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="projectModalLabel">
+                        Project Description
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body" style="text-align: justify">
+                      <!-- Modal content will be dynamically injected here -->
+                      <h5 id="modalTitle"></h5>
+                      <p id="modalDescription" class="text-muted"></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <script>
+                function openModal(title, description) {
+                  // Set the modal title and description dynamically
+                  document.getElementById("modalTitle").innerText = title;
+                  document.getElementById("modalDescription").innerText =
+                    description;
+                }
+              </script>
+              <!-- Mind Over Muscle -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects sub-ml"
+                style="text-align: justify"
+              >
+                <div class="card shadow-sm p-3">
+                  <div class="card-body">
+                    <h4 class="card-title">Mind Over Muscle</h4>
+                    <p class="card-text text-muted mb-1">
+                      This project leverages data science techniques to explore
+                      the relationship between gym workouts and mental health.
+                    </p>
+                    <p class="text-secondary small mb-2">
+                      <i class="bi bi-calendar-event"></i> March 2025
+                    </p>
+
+                    <!-- Buttons Container -->
+                    <div class="button-container">
+                      <a
+                        href="https://github.com/Mohammadalshurbaji/Analyzing-the-Impact-of-Gym-Workouts-on-Mental-Health"
+                        class="btn btn-outline-secondary btn-sm"
+                        target="_blank"
+                      >
+                        <i class="bi bi-github"></i> GitHub Repo
+                      </a>
+
+                      <!-- View Button to open modal -->
+                      <button
+                        class="btn btn-outline-secondary btn-sm ms-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal"
+                        onclick="openModal('Mind Over Muscle', 'This project is currently under development and is a work in progress.')"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Stock Market Forecasting -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects sub-ml"
+                style="text-align: justify"
+              >
+                <div class="card shadow-sm p-3">
+                  <div class="card-body">
+                    <h4 class="card-title">Stock Market Forecasting</h4>
+                    <p class="card-text text-muted mb-1">
+                      This project aims to predict stock market prices using
+                      advanced Deep Learning and Machine Learning techniques.
+                    </p>
+                    <p class="text-secondary small mb-2">
+                      <i class="bi bi-calendar-event"></i> February 2025
+                    </p>
+
+                    <!-- Buttons Container -->
+                    <div class="button-container">
+                      <a
+                        href="https://github.com/Mohammadalshurbaji/Stock-Market-Forecasting"
+                        class="btn btn-outline-secondary btn-sm"
+                        target="_blank"
+                      >
+                        <i class="bi bi-github"></i> GitHub Repo
+                      </a>
+
+                      <!-- View Button to open modal -->
+                      <button
+                        class="btn btn-outline-secondary btn-sm ms-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal"
+                        onclick="openModal('Stock Market Forecasting', 'This project is currently under development and is a work in progress.')"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Lazy Predict -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects sub-ml"
+                style="text-align: justify"
+              >
+                <div class="card shadow-sm p-3">
+                  <div class="card-body">
+                    <h4 class="card-title">Lazy Predict</h4>
+                    <p class="card-text text-muted mb-1">
+                      Discover the Best ML Model for Your Project in Minutes!
+                    </p>
+                    <p class="text-secondary small mb-2">
+                      <i class="bi bi-calendar-event"></i> January 2025
+                    </p>
+
+                    <!-- Buttons Container -->
+                    <div class="button-container">
+                      <a
+                        href="https://github.com/Mohammadalshurbaji/LazyPredict"
+                        class="btn btn-outline-secondary btn-sm"
+                        target="_blank"
+                      >
+                        <i class="bi bi-github"></i> GitHub Repo
+                      </a>
+
+                      <!-- View Button to open modal -->
+                      <button
+                        class="btn btn-outline-secondary btn-sm ms-2"
+                        style="text-align: justify"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal"
+                        onclick="openModal('Lazy Predict', 'Have you ever wondered which ML model is the most accurate and efficient for your project? It can be quite challenging at times! While scrolling recently, I came across something really interesting that can save us countless hours. By using the LazyPredict method, you can easily run a simplified training test on your dataset to quickly identify the best ML model for your project! It\'s quick, ready to use, and will present the top models along with the most relevant metrics. A real game-changer, right? I had to test it myself, so I tried it on one of the most popular datasets, Load_Iris, and it worked really well. The best part? You can use it for both classification and regression tasks!')"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Deep Learning in Computational Photography -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects sub-ml"
+                style="text-align: justify"
+              >
+                <div class="card shadow-sm p-3">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Deep Learning in Computational Photography
+                    </h4>
+                    <p class="card-text text-muted mb-1">
+                      This project investigates depth estimation from single
+                      images using deep learning methods.
+                    </p>
+                    <p class="text-secondary small mb-2">
+                      <i class="bi bi-calendar-event"></i> December 2025
+                    </p>
+
+                    <!-- Buttons Container -->
+                    <div class="button-container">
+                      <a
+                        href="https://github.com/Mohammadalshurbaji/Deep-Learning-in-Computational-Photography"
+                        class="btn btn-outline-secondary btn-sm"
+                        target="_blank"
+                      >
+                        <i class="bi bi-github"></i> GitHub Repo
+                      </a>
+
+                      <!-- View Button to open modal -->
+                      <button
+                        class="btn btn-outline-secondary btn-sm ms-2"
+                        style="text-align: justify"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal"
+                        onclick="openModal('Deep Learning in Computational Photography', 'Motivation: Accurate depth perception is crucial for various applications, including robotics, autonomous driving, and augmented reality. Traditional methods often rely on expensive and bulky hardware. This project aims to leverage the power of deep learning to achieve robust and cost-effective depth estimation from single images.')"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Data Completion in Financial Time Series -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects sub-ml"
+                style="text-align: justify"
+              >
+                <div class="card shadow-sm p-3">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Data Completion in Financial Time Series
+                    </h4>
+                    <p class="card-text text-muted mb-1">
+                      This project investigates the application of data
+                      completion techniques for portfolio management and risk
+                      modeling.
+                    </p>
+                    <p class="text-secondary small mb-2">
+                      <i class="bi bi-calendar-event"></i> December 2025
+                    </p>
+
+                    <!-- Buttons Container -->
+                    <div class="button-container">
+                      <a
+                        href="https://github.com/Mohammadalshurbaji/Data-Completion-for-Portfolio-Optimization"
+                        class="btn btn-outline-secondary btn-sm"
+                        target="_blank"
+                      >
+                        <i class="bi bi-github"></i> GitHub Repo
+                      </a>
+
+                      <!-- View Button to open modal -->
+                      <button
+                        class="btn btn-outline-secondary btn-sm ms-2"
+                        style="text-align: justify"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal"
+                        onclick="openModal('Data Completion in Financial Time Series', 'Driven by a passion for finance and the stock market, this project explores portfolio management and risk modeling using low-rank matrix completion with nuclear norm minimization.')"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Advanced Machine Learning - CPSC 8420 -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects sub-ml"
+                style="text-align: justify"
+              >
+                <div class="card shadow-sm p-3">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Advanced Machine Learning - CPSC 8420
+                    </h4>
+                    <p class="card-text text-muted mb-1">
+                      This repo documents my journey through CPSC 8420: Advanced
+                      Machine Learning.
+                    </p>
+                    <p class="text-secondary small mb-2">
+                      <i class="bi bi-calendar-event"></i> December 2025
+                    </p>
+
+                    <!-- Buttons Container -->
+                    <div class="button-container">
+                      <a
+                        href="https://github.com/Mohammadalshurbaji/Advanced-Machine-Learning-CPSC8420"
+                        class="btn btn-outline-secondary btn-sm"
+                        target="_blank"
+                      >
+                        <i class="bi bi-github"></i> GitHub Repo
+                      </a>
+
+                      <!-- View Button to open modal -->
+                      <button
+                        class="btn btn-outline-secondary btn-sm ms-2"
+                        style="text-align: justify"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal"
+                        onclick="openModal('Advanced Machine Learning', 'This rigorous course delved into the mathematical and coding foundations of ML. The assignmentsand final exam demonstrate the practical application ofthese concepts. I highly recommend this course to anyoneseeking a deeper understanding of machine learning.')"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Nesterov’s Accelerated Gradient Descent for Convex Programming -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects sub-ml"
+                style="text-align: justify"
+              >
+                <div class="card shadow-sm p-3">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Nesterov’s Accelerated Gradient Descent for Convex
+                      Programming
+                    </h4>
+                    <p class="card-text text-muted mb-1">
+                      This project explores the implementation of Nesterov’s
+                      Accelerated Gradient Descent.
+                    </p>
+                    <p class="text-secondary small mb-2">
+                      <i class="bi bi-calendar-event"></i> December 2025
+                    </p>
+
+                    <!-- Buttons Container -->
+                    <div class="button-container">
+                      <a
+                        href="https://github.com/Mohammadalshurbaji/Machine-Learning-Optimization-CPSC-8810"
+                        class="btn btn-outline-secondary btn-sm"
+                        target="_blank"
+                      >
+                        <i class="bi bi-github"></i> GitHub Repo
+                      </a>
+
+                      <!-- View Button to open modal -->
+                      <button
+                        class="btn btn-outline-secondary btn-sm ms-2"
+                        style="text-align: justify"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal"
+                        onclick="openModal('Nesterov Accelerated Gradient Descent for Convex Programming', 'This project explores the implementation and analysis of Nesterov’s Accelerated Gradient Descent, an advanced optimization algorithm introduced in 1983. Designed to tackle convex programming problems, this method significantly improves convergence rates compared to traditional gradient descent, setting a new standard in optimization techniques.')"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Predicting Hearing Loss Using MRI Images -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects sub-ml"
+                style="text-align: justify"
+              >
+                <div class="card shadow-sm p-3">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Predicting Hearing Loss Using MRI Images
+                    </h4>
+                    <p class="card-text text-muted mb-1">
+                      This project focuses on predicting hearing loss using MRI
+                      images. It was developed as part of a team effort for the
+                      Data Mining class.
+                    </p>
+                    <p class="text-secondary small mb-2">
+                      <i class="bi bi-calendar-event"></i> May 2025
+                    </p>
+
+                    <!-- Buttons Container -->
+                    <div class="button-container">
+                      <a
+                        href="https://github.com/Mohammadalshurbaji/Predicting-Hearing-Loss-A-Data-Driven-Approach-with-Deep-Learning"
+                        class="btn btn-outline-secondary btn-sm"
+                        target="_blank"
+                      >
+                        <i class="bi bi-github"></i> GitHub Repo
+                      </a>
+
+                      <!-- View Button to open modal -->
+                      <button
+                        class="btn btn-outline-secondary btn-sm ms-2"
+                        style="text-align: justify"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal"
+                        onclick="openModal('Predicting Hearing Loss Using MRI Images', 'This project focuses on predicting hearing loss using MRI images. It was developed as part of a team effort for the Data Mining class. The project showcases three deep learning techniques with the aim to demonstrate that Convolutional Neural Networks (CNN) are the best model for processing MRI images. The model development process included steps such as data cleaning, preprocessing, model building, training, and evaluation, concluding with data visualization to assess the model’s performance.')"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pizza Restaurant Database Management System -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects sub-ml"
+                style="text-align: justify"
+              >
+                <div class="card shadow-sm p-3">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Pizza Restaurant Database Management
+                    </h4>
+                    <p class="card-text text-muted mb-1">
+                      This project is a relational database management system
+                      (RDBMS) designed for a pizza restaurant as part of our
+                      Database Management Systems course.
+                    </p>
+                    <p class="text-secondary small mb-2">
+                      <i class="bi bi-calendar-event"></i> December 2023
+                    </p>
+
+                    <!-- Buttons Container -->
+                    <div class="button-container">
+                      <a
+                        href="https://github.com/Mohammadalshurbaji/Database-Management-Systems"
+                        class="btn btn-outline-secondary btn-sm"
+                        target="_blank"
+                      >
+                        <i class="bi bi-github"></i> GitHub Repo
+                      </a>
+
+                      <!-- View Button to open modal -->
+                      <button
+                        class="btn btn-outline-secondary btn-sm ms-2"
+                        style="text-align: justify"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal"
+                        onclick="openModal('Pizza Restaurant Database Management', 'This project is a relational database management system (RDBMS) designed for a pizza restaurant as part of our Database Management Systems course. The primary goal was to develop a fully functional system using MySQL and Java, capable of managing customer orders, inventory, and reporting.')"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Smart Selector - Portfolio Optimizer -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects sub-ml"
+                style="text-align: justify"
+              >
+                <div class="card shadow-sm p-3">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Smart Selector - Portfolio Optimizer
+                    </h4>
+                    <p class="card-text text-muted mb-1">
+                      This project was created for the Georgia Tech Hackathon by
+                      our team, Infinity, who are passionate about the finance
+                      industry.
+                    </p>
+                    <p class="text-secondary small mb-2">
+                      <i class="bi bi-calendar-event"></i> March 2024
+                    </p>
+
+                    <!-- Buttons Container -->
+                    <div class="button-container">
+                      <a
+                        href="https://github.com/Mohammadalshurbaji/Smart-Selector---Portfolio-Optimizer-"
+                        class="btn btn-outline-secondary btn-sm"
+                        target="_blank"
+                      >
+                        <i class="bi bi-github"></i> GitHub Repo
+                      </a>
+
+                      <!-- View Button to open modal -->
+                      <button
+                        class="btn btn-outline-secondary btn-sm ms-2"
+                        style="text-align: justify"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal"
+                        onclick="openModal('Smart Selector - Portfolio Optimizer', 'This project was created for the Georgia Tech Hackathon by our team, Infinity, who are passionate about the finance industry. We decided to build an entry-level application that takes your investment amount and risk tolerance, and, based on those inputs, provides the optimal portfolio for you.')"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Exploring Wine Reviews in California -->
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-projects sub-ml"
+                style="text-align: justify"
+              >
+                <div class="card shadow-sm p-3">
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Exploring Wine Reviews in California
+                    </h4>
+                    <p class="card-text text-muted mb-1">
+                      This project was developed as part of our Data
+                      Visualization class to explore the vast world of wine
+                      reviews through interactive data storytelling.
+                    </p>
+                    <p class="text-secondary small mb-2">
+                      <i class="bi bi-calendar-event"></i> March 2024
+                    </p>
+
+                    <!-- Buttons Container -->
+                    <div class="button-container">
+                      <a
+                        href="https://github.com/Mohammadalshurbaji/Exploring-the-World-of-Wine-Through-Data-Visualization"
+                        class="btn btn-outline-secondary btn-sm"
+                        target="_blank"
+                      >
+                        <i class="bi bi-github"></i> GitHub Repo
+                      </a>
+
+                      <!-- View Button to open modal -->
+                      <button
+                        class="btn btn-outline-secondary btn-sm ms-2"
+                        style="text-align: justify"
+                        data-bs-toggle="modal"
+                        data-bs-target="#projectModal"
+                        onclick="openModal('Exploring Wine Reviews in California', 'This project was developed as part of our Data Visualization class to explore the vast world of wine reviews through interactive data storytelling. Using D3.js and Tableau, we created an interactive website to analyze wine varieties, pricing trends, ratings, and winery distributions - all centered around California’s wine industry. What makes this project even more unique is that neither of us drinks alcohol! That made our curiosity-driven approach even more fascinating. We sought to understand how people perceive wine, what influences its price and ratings, and which wineries dominate California’s wine production.')"
+                      >
+                        View
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <!-- Cert 1 -->
               <div
@@ -752,7 +1295,6 @@
                       data-gallery="portfolio-gallery-recommendations"
                       class="glightbox btn btn-outline-secondary"
                       ><i class="bi bi-zoom-in"></i> View</a
-                    >
                     >
                   </div>
                 </div>
@@ -793,7 +1335,7 @@
                 <div class="card shadow-sm">
                   <div class="thumbnail-container">
                     <img
-                      src="assets/img/Projects/Ignition.PNG"
+                      src="assets/img/Projects/Ignition.png"
                       class="card-img-top img-fluid"
                       alt="Recommendation Letter"
                     />
@@ -802,7 +1344,7 @@
                     <h4 class="card-title">Ignition 8.1 Credential</h4>
                     <p class="card-text">Inductive University</p>
                     <a
-                      href="assets/img/Projects/Ignition.PNG"
+                      href="assets/img/Projects/Ignition.png"
                       title="Tech Certificate - Ignition"
                       data-gallery="portfolio-gallery-recommendations"
                       class="glightbox btn btn-outline-secondary"
@@ -1175,6 +1717,53 @@
           </div>
         </div>
       </section>
+      <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const filters = document.querySelectorAll(".portfolio-filters li");
+          const subTabWrapper = document.getElementById("project-sub-tabs");
+          const subTabs = document.querySelectorAll(".sub-tab");
+          const isoContainer = document.querySelector(".isotope-container");
+
+          let iso;
+
+          imagesLoaded(isoContainer, function () {
+            iso = new Isotope(isoContainer, {
+              itemSelector: ".portfolio-item",
+              layoutMode: "masonry",
+            });
+            iso.arrange({ filter: ".filter-projects" }); // Default to Projects
+          });
+
+          filters.forEach((filter) => {
+            filter.addEventListener("click", function () {
+              if (this.dataset.filter === ".filter-projects") {
+                subTabWrapper.classList.remove("d-none");
+                document.querySelector(".sub-tab[data-subtab='all']").click();
+              } else {
+                subTabWrapper.classList.add("d-none");
+              }
+            });
+          });
+
+          subTabs.forEach((tab) => {
+            tab.addEventListener("click", function () {
+              subTabs.forEach((t) => t.classList.remove("active"));
+              this.classList.add("active");
+
+              const subFilter = this.dataset.subtab;
+              iso.arrange({
+                filter: function (itemElem) {
+                  return (
+                    itemElem.classList.contains("filter-projects") &&
+                    (subFilter === "all" ||
+                      itemElem.classList.contains(`sub-${subFilter}`))
+                  );
+                },
+              });
+            });
+          });
+        });
+      </script> -->
       <!-- End Portfolio Section -->
 
       <!-- Contact Section -->
@@ -1298,6 +1887,7 @@
           </div>
         </div>
       </section>
+
       <!-- /Contact Section -->
     </main>
 
