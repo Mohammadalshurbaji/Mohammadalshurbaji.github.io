@@ -150,6 +150,10 @@
         filter: filter,
         sortBy: sort
       });
+      // Set the default filter to "Projects"
+      initIsotope.arrange({
+        filter: '.filter-tech'
+      });
     });
 
     isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
